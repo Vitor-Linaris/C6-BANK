@@ -1,0 +1,32 @@
+.btn-primary,
+.btn-secondary{
+    display: inline-block;
+    padding: 0 5rem;
+    border-radius: 100px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 4rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+.btn-primary{
+    background-color: #FFCE2E;
+    color: #242424;
+    &:hover{
+        color: #ffffff;
+        background-color: #f7d80c;
+    }
+}
+
+.btn-secondary{
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    color: #ffffff;
+    &:hover{
+        color: #242424;
+        background-color: #ffffff;
+    }
+}

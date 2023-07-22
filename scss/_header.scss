@@ -1,0 +1,109 @@
+header{
+    position: absolute;
+    width: 100%;
+    padding-top: 3.8rem;
+    z-index: 2000;
+    .container{
+        @include flex(row,center,space-between);
+    }
+    .content-left{
+        display: flex;
+        align-items: center;
+        .logo-scroll{
+            display: none;
+        }
+        nav{
+              ul{
+                display: flex;
+                align-items: center;
+                margin-left: 20rem;
+                li{
+                    &:not(:last-child){
+                        margin-right: 4.6rem;
+                    }
+                    a{
+                        display: flex;
+                        align-items: center;
+                        span{
+                            margin-right: 1.2rem;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: rgba(255, 255, 255, 0.7);
+                            transition: color .3s;
+                            &:hover{
+                                color: rgba(255, 255, 0, 0.711);
+                            }
+                        }
+                    }
+                }
+              }
+        }
+    }
+    @include responsive(991px){
+        .content-left{
+            nav{
+                ul{
+                    margin-left: 6rem;
+                }
+            }
+        }
+    }
+    @include responsive(768px){
+        .content-left{
+            nav{
+               display: none;
+            }
+        }
+    }
+    @include responsive(480px){
+        height: 8.8rem;
+        .btn-primary{
+            padding: 0 1.4rem;
+          }
+    }
+    @include responsive(330px){
+      .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .btn-primary{
+        display: none;
+    }
+    }
+}
+
+.headChange{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    height: 7.2rem;
+    display: flex;
+    transition: all .3s;
+    .content-left{
+        .logo-scroll{
+            display: block;
+        }
+        .logo{
+            display: none;
+        }
+        nav{
+            ul{
+                li{
+                    
+                    span{
+                        color: #616161;
+
+                        opacity: 0.7;
+                        &:hover{
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
