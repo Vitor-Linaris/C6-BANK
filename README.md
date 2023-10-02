@@ -1,4 +1,4 @@
-![Logo](./img/logo.svg)
+![Logo](./img/logo.png)
 
 Projeto: C6 Bank
 
