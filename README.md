@@ -15,7 +15,6 @@ Esse projeto **C6 Banck**, é um projeto desenvolvido para praticar todo o meu c
 - HTML
 - CSS/SASS
 - Javascrpit
-- GulpJS
 - AOS animation
 
 ## Criador & Autor
